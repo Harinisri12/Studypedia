@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%# Head %>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Online Courses - Studypedia</title>
+		<link rel="stylesheet" href="/styles/style.css" type="text/css" />
+		<link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/43c1b0f304.js" crossOrigin="anonymous"></script>
+	</head>
+	<%# end of head %>
+	<body>
+		<%# Import Nav %>
+		<header>
+			<%- include('../partials/nav') %>
+		</header>
+
+		<%# Main content %>
+		<main>
+      <%# Absolute SVG that is displayed on page %>
+			<img src="/media/topItem.svg" class="topItemLarge" />
+			
+			<%# Text Header at top of page %>
+			<article class="vrHeader">
+				<h1>Online Courses</h1>
+				<p>Taking up a professional course is important to improve your performance in a given career. In order to acquire more advanced and better skills, many people today go for these professional courses.</p>
+			</article>
+			<%# Import cards %>
+			<section>
+				<%- include('../partials/cardz2') %>
+				
+			</section>
+		</main>
+		<%# End of main content %>
+
+		<%# Import footer %>
+		<footer>
+			<%- include('../partials/footer') %>
+		</footer>
+	</body>
+</html>
